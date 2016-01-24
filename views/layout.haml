@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %link{rel: :stylesheet, type: 'text/css', href: "/assets/css/styles.css"}
+    %title My amazing HandsHQ Programming challenge
+  %body
+    %header
+      %h1 
+        Welcome!
+  
+    %section
+      - @categories.each do |c|
+        %ul
+          %li
+            %div
+              %label
+                %input{type: 'checkbox', name: 'name'}
+                #{c.name}
+            %ul
+              - c.sub_categories.each do |sb|
+                %li
+                  %div
+                    %label
+                      %input{type: 'checkbox', name: 'name'}
+                      #{sb.name} 
+    = yield
