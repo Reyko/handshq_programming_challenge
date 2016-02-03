@@ -1,6 +1,6 @@
 %section
   %h3 New category
-  %form{method: 'post', action: '/categories/create'} 
+  %form{method: 'post', action: '/categories/create'}
     %div
       %label{for: 'name'} Name
       %input{type: 'textfield', name: 'name'}
@@ -15,8 +15,8 @@
         %input{type: 'hidden', name: '_method', value: 'put'}
         %div
           %label{for: 'category[name]'} Name
-          %input{type: 'textfield', name: 'category[name]', value: "#{c.name}"}
+          %input{type: 'textfield', name: 'name', value: "#{c.name}"}
         %input{type: 'submit', value: 'Update'}
-      %form{method: 'post', action: "/destroy/#{c.id}"}
+      %form{method: 'post', action: "/categories/destroy/#{c.id}"}
         %input{type: 'hidden', name: '_method', value: 'delete'}
         %input{type: 'submit', value: 'Delete'}

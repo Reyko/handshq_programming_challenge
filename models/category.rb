@@ -1,26 +1,53 @@
 class Category
   @@category_objects = []
-  
+
   attr_reader :id
   attr_accessor :name, :sub_categories
-  
-  def self.all
-    @@category_objects
-  end
-  
+
+    def self.all
+      @@category_objects
+
+    end
+
   def initialize(args)
-    @id = @@category_objects.count
+    if @@category_objects.count == 0
+      @id =0
+    else
+      @id = @@category_objects.last.id+1
+    end
+
     @name = args[:name]
     @sub_categories = args[:sub_categories] || []
     @@category_objects << self
   end
-  
-  # TODO implement the create method which creates new categories
-  
-  # TODO implement the find method which finds a specific category by id
-  
-  # TODO implement the update method which updates a specific category with the passed arguments
 
-  # TODO implement the destroy method which destroy the specific category
+  def self.create(args)
+    self.new(args)
+  end
+
+  def self.find(id)
+    @@category_objects.each do |c|
+      if c.id == id.to_i
+        @mycat = c
+      end
+    end
+    @mycat
+  end
+
+  def update(args)
+    @name = args[:name]
+    @sub_categories = args[:sub_categories] || []
+  end
+
+  def destroy
+    @theNewArray = []
+    @@category_objects.each do |c|
+      if c.id != id.to_i
+          @theNewArray << c
+      end
+    end
+    @@category_objects = @theNewArray
+
+  end
 
 end
