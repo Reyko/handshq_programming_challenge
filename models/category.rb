@@ -47,7 +47,9 @@ class Category
       end
     end
     @@category_objects = @theNewArray
+    end
 
-  end
+
+
 
 end
