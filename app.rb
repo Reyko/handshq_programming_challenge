@@ -4,9 +4,10 @@ require 'haml'
 require 'pry'
 require './models/category'
 require './models/categories'
+require './models/subcategory'
 
 configure do
-  Categories.new
+  Categories.new([{:main => "DVD",:sub =>['PAL','NTFS']}])
 end
 
 get '/' do

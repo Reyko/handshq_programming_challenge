@@ -4,11 +4,11 @@
 
 Welcome to the HANDS HQ Programming challenge!
 
-After making sure that you have setup a ruby development environment by following one of the tutorials that are available for your operating system, please follow the installation instructions bellow. 
+After making sure that you have setup a ruby development environment by following one of the tutorials that are available for your operating system, please follow the installation instructions bellow.
 
 As a requirement for this exercise should be your familiarity with Git. Please have a look to this [Github tutorial](https://guides.github.com/activities/hello-world/)
 
-## Sources 
+## Sources
 
 * [Ruby-lang](https://www.ruby-lang.org/en/documentation/installation/)
 * [Bundler](http://bundler.io/)
@@ -21,7 +21,7 @@ As a requirement for this exercise should be your familiarity with Git. Please h
 
 ## Installation
 
-1. Fork the repository 
+1. Fork the repository
 2. Create a folder in your machine `mkdir <folder name>`
 3. Navigate to the newly created folder `cd <folder name>`
 4. Clone the repository git clone [https://github.com/Reyko/handshq_programming_challenge.git](https://github.com/Reyko/handshq_programming_challenge.git)
@@ -51,9 +51,9 @@ As a requirement for this exercise should be your familiarity with Git. Please h
   You should see the categories that you just created!
 
 2. Implement the find, create class methods in the Category class
-  
+
 3. Implement the update and destroy instance methods in the Category class
-  
+
 4. Now you should be able to create, update and destroy categories by using the provided forms :)
 
 5. Oh wait! Something is wrong with destroying categories.. Can you spot the bug?
@@ -71,7 +71,7 @@ As a requirement for this exercise should be your familiarity with Git. Please h
 
 ## Part 3
 
-1. Implement a Product class 
+1. Implement a Product class
 
 2. The Product class should have a name, description and image methods
 
@@ -85,7 +85,7 @@ As a requirement for this exercise should be your familiarity with Git. Please h
 
 7. In show.haml write the mark up to display all the products for a category include the product name, description and      image
 
-8. Now every time you click on a category name you should see your products! 
+8. Now every time you click on a category name you should see your products!
 
 ## Part 4
 
@@ -95,7 +95,7 @@ As a requirement for this exercise should be your familiarity with Git. Please h
 
 3. Make sure you include it in your layout
 
-4. Use the mock ups provided and style your pages accordingly 
+4. Use the mock ups provided and style your pages accordingly
 
 5. Use vanilla Javascript or jQuery and make your categories checkboxes to hide and unhide your subcategories
 
@@ -103,5 +103,4 @@ As a requirement for this exercise should be your familiarity with Git. Please h
 
 ## Conclusion
 
-When you finish push your solution to Github and create a pull request. 
- 
+When you finish push your solution to Github and create a pull request.

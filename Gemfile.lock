@@ -1,6 +1,9 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     coderay (1.1.0)
+    haml (4.0.7)
+      tilt
     method_source (0.8.2)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -20,8 +23,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   pry
   sinatra
 
 BUNDLED WITH
-   1.10.5
+   1.11.2
